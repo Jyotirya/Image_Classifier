@@ -2,60 +2,27 @@
 Cell_Images/
 Labeled_images/
 
-# Ignore yolo and sam directories anywhere
+# Ignore YOLO and SAM directories anywhere
 **/yolo*/
 **/sam*/
 
-# Python artifacts
+# Ignore model weights
+*.pt
+*.pth
+
+# Python / jupyter / misc
 __pycache__/
 *.py[cod]
 *.so
 *.egg-info/
-
-# Virtualenvs and env files
 venv/
 env/
 .env
-
-# Jupyter
 .ipynb_checkpoints
-
-# Misc
 .DS_Store
 Thumbs.db
 
-# Optional: models / large data
+# Large data / models
 models/
 data/
-# Note: do NOT ignore final_labels_manual.csv if you want it tracked.
-```// filepath: /home/jyotirya-agrawal/ML/DS203 Project/Files/.gitignore
-# Project image folders
-Cell_Images/
-Labeled_images/
-
-# Ignore yolo and sam directories anywhere
-**/yolo*/
-**/sam*/
-
-# Python artifacts
-__pycache__/
-*.py[cod]
-*.so
-*.egg-info/
-
-# Virtualenvs and env files
-venv/
-env/
-.env
-
-# Jupyter
-.ipynb_checkpoints
-
-# Misc
-.DS_Store
-Thumbs.db
-
-# Optional: models / large data
-models/
-data/
-# Note: do NOT ignore final_labels_manual.csv if you want it tracked.
+# keep final_labels_manual.csv tracked
